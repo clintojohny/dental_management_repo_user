@@ -1,0 +1,47 @@
+
+
+
+<header  [class.fixed-header]="isScrolled" class="navbar ">
+  <div routerLink="/home" class="logo"><img  src="/assets/clinora-logo.png" alt="logo" ></div>
+<ul class="menuTopBarnav">
+  <li> <a routerLink="/home">Home</a></li>
+  <li>    <a routerLink="/services">Services</a></li>
+  <li>    <a routerLink="/doctors">Doctors</a></li>
+  <li>    <a routerLink="/about">About</a></li>
+  <li> <a routerLink="/contact">Contact</a></li>
+</ul>
+
+<div class="mobileMenumain">
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="offcanvas-body">
+      <div class="logo"><img  src="/assets/clinora-logo.png" alt="logo" ></div>
+<ul class="menuTopBarnav">
+  <li> <a routerLink="/home">Home</a></li>
+  <li>    <a routerLink="/services">Services</a></li>
+  <li>    <a routerLink="/doctors">Doctors</a></li>
+  <li>    <a routerLink="/about">About</a></li>
+  <li> <a routerLink="/contact">Contact</a></li>
+</ul>
+  </div>
+</div>
+</div>
+
+<div class="bookflexMain">
+<button class="mobileToogleMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+<i class="bi bi-list"></i>
+</button>
+<button class="bookAppontmentBtn" tabindex="0" (click)="openLoginDialog()"> Book Appointment </button>
+</div>
+
+
+
+ 
+</header>
+
+
+

@@ -1,0 +1,648 @@
+<section class="bannerBgSecMain">
+  <div class="mainContainer">
+    <div class="bannerSecMainGrid">
+      <div class="txtDivMainall">
+        <h1>We Care about Your <strong>Dental Health</strong></h1>
+        <p>
+          We provide advanced, pain-free dental care tailored for every member of your family. From
+          routine check-ups to complete smile makeovers, your comfort is our priority. Our
+          experienced team uses modern technology in a safe, welcoming environment. Because every
+          confident smile begins with exceptional care.
+        </p>
+        <button class="bookAppontmentBtn" (click)="openLoginDialog()"> Book Appointment </button>
+      </div>
+
+      <div class="hero-image-prime">
+        <figure>
+          <img src="/assets/hero-image-prime.png" alt="" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="aboutBgSecMain">
+  <div class="mainContainer">
+    <div class="gridaboutMain">
+      <div class="aboutWrapperCommonall">
+        <div class="about-us-images">
+          <div class="about-image-box-1">
+            <div class="about-image">
+              <figure>
+                <img src="/assets/about-us-image-1.png" alt="" />
+              </figure>
+            </div>
+          </div>
+
+          <div class="about-image-box-2">
+            <div class="about-image">
+              <figure class="image-anime reveal">
+                <img
+                  src="/assets/about-us-image-2.jpg"
+                  alt=""
+                  style="translate: none; rotate: none; scale: none; transform: translate(0px)"
+                />
+              </figure>
+
+              <div class="year-experience-circle">
+                <img src="/assets/year-experience-circle.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="about-counter-box">
+              <div class="about-counter-info">
+                <h2>25%</h2>
+              </div>
+              <div class="about-counter-content">
+                <p>Bigger Discounts, Brighter Smiles - 25% Off Now!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutTxtWrapper">
+        <span>About Us</span>
+        <h3>Your Trusted Partner for <strong>Dental Health</strong></h3>
+        <p>
+          Providing expert care and personalized solutions for a healthier, brighter smile,
+          dedicated to enhancing your dental well-being and creating lasting confidence with every
+          visit.
+        </p>
+
+        <div class="why-choose-item-list-prime">
+          <div class="why-choose-item-prime">
+            <div class="icon-box">
+              <img src="assets/icon-why-choose-1.svg" alt="" />
+            </div>
+            <div class="why-choose-item-content-prime">
+              <p>Friendly Environment</p>
+            </div>
+          </div>
+
+          <div class="why-choose-item-prime">
+            <div class="icon-box">
+              <img src="assets/icon-why-choose-2.svg" alt="" />
+            </div>
+            <div class="why-choose-item-content-prime">
+              <p>Experienced Dental</p>
+            </div>
+          </div>
+
+          <div class="why-choose-item-prime">
+            <div class="icon-box">
+              <img src="assets/icon-why-choose-3.svg" alt="" />
+            </div>
+            <div class="why-choose-item-content-prime">
+              <p>Personalized Patient care</p>
+            </div>
+          </div>
+          <div class="why-choose-item-prime">
+            <div class="icon-box">
+              <img src="assets/icon-why-choose-4.svg" alt="" />
+            </div>
+            <div class="why-choose-item-content-prime">
+              <p>Pain-Free Dentistry</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="bookAppontmentBtn">About More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ourServiceBgSec">
+  <div class="centreTxt">
+    <span>Our services</span>
+    <h3>Dental Care <strong>We Provide</strong></h3>
+  </div>
+
+  <div class="serviceGridMain">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="serviceWrapper">
+          <div class="imgWrapper"><img src="/assets/service-img1.jpg" alt="" /></div>
+          <div class="text-overlay">
+            <h3>Teeth Whitening</h3>
+          </div>
+          <div class="icon">
+            <a href="#" class="arrow"><i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="serviceWrapper">
+          <div class="imgWrapper"><img src="/assets/service-img2.jpg" alt="" /></div>
+          <div class="text-overlay">
+            <h3>Dental Implants</h3>
+          </div>
+          <div class="icon">
+            <a href="#" class="arrow"><i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="serviceWrapper">
+          <div class="imgWrapper"><img src="/assets/service-img3.jpg" alt="" /></div>
+          <div class="text-overlay">
+            <h3>Orthodontics</h3>
+          </div>
+          <div class="icon">
+            <a href="#" class="arrow"><i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="serviceWrapper">
+          <div class="imgWrapper"><img src="/assets/service-img4.jpg" alt="" /></div>
+          <div class="text-overlay">
+            <h3>Cosmetic Dentistry</h3>
+          </div>
+          <div class="icon">
+            <a href="#" class="arrow"><i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="serviceWrapper">
+          <div class="imgWrapper"><img src="/assets/service-img5.jpg" alt="" /></div>
+          <div class="text-overlay">
+            <h3>Root Canal Treatment</h3>
+          </div>
+          <div class="icon">
+            <a href="#" class="arrow"><i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="serviceWrapper">
+          <div class="imgWrapper"><img src="/assets/service-img6.jpg" alt="" /></div>
+          <div class="text-overlay">
+            <h3>Pediatric Dentistry</h3>
+          </div>
+          <div class="icon">
+            <a href="#" class="arrow"><i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+
+</section>
+<section class="afterBeforeBgSecMain">
+  <div class="mainContainer">
+    <div class="centreTxt">
+      <span>After/Before</span>
+      <h3>
+        Transformation
+        <strong>before and after</strong>
+      </h3>
+    </div>
+    <mat-tab-group>
+      <mat-tab label="Invisalign Treatment">
+        <div class="comparisonGridMain">
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-1.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-1.jpg" />
+          </img-comparison-slider>
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-2.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-2.jpg" />
+          </img-comparison-slider>
+
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-3.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-3.jpg" />
+          </img-comparison-slider></div
+      ></mat-tab>
+      <mat-tab label="Veneers & Bonding">
+        <div class="comparisonGridMain">
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-4.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-4.jpg" />
+          </img-comparison-slider>
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-5.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-5.jpg" />
+          </img-comparison-slider>
+
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-6.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-6.jpg" />
+          </img-comparison-slider>
+        </div>
+      </mat-tab>
+      <mat-tab label="Pediatric Transformations">
+        <div class="comparisonGridMain">
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-7.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-7.jpg" />
+          </img-comparison-slider>
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-8.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-8.jpg" />
+          </img-comparison-slider>
+
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-9.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-9.jpg" />
+          </img-comparison-slider>
+        </div>
+      </mat-tab>
+      <mat-tab label="Teeth Whitening">
+        <div class="comparisonGridMain">
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-1.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-1.jpg" />
+          </img-comparison-slider>
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-2.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-2.jpg" />
+          </img-comparison-slider>
+
+          <img-comparison-slider>
+            <img slot="first" src="/assets/transformation-img-before-3.jpg" />
+            <img slot="second" src="/assets/transformation-img-after-3.jpg" />
+          </img-comparison-slider>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</section>
+
+<section class="whyChooseUsBgSecMain">
+  <div class="mainContainer">
+    <div class="centreTxt">
+      <span>Why choose us</span>
+      <h3>Dental Care <strong>You Can Trust</strong></h3>
+    </div>
+    <div class="whyChooseGridMain">
+      <div class="why-choose-item-list">
+        <div class="why-choose-item wow fadeInUp">
+          <div class="icon-box">
+            <img src="assets/icon-why-choose-5.svg" alt="" />
+          </div>
+          <div class="why-choose-item-content">
+            <h3>State-of-Art Technology</h3>
+            <p>
+              We use advanced dental technology to ensure precise, safe, and comfortable treatments
+              for every patient.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-choose-item wow fadeInUp">
+          <div class="icon-box">
+            <img src="assets/icon-why-choose-6.svg" alt="" />
+          </div>
+          <div class="why-choose-item-content">
+            <h3>Patient-Centered Approach</h3>
+            <p>
+              We use advanced dental technology to ensure precise, safe, and comfortable treatments
+              for every patient.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="why-choose-image wow fadeInUp">
+        <figure>
+          <img src="assets/why-choose-image.png" alt="" />
+        </figure>
+      </div>
+      <div class="why-choose-item-list">
+        <div class="why-choose-item wow fadeInUp">
+          <div class="icon-box">
+            <img src="assets/icon-why-choose-7.svg" alt="" />
+          </div>
+          <div class="why-choose-item-content">
+            <h3>Gentle Compassionate Care</h3>
+            <p>
+              We use advanced dental technology to ensure precise, safe, and comfortable treatments
+              for every patient.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-choose-item wow fadeInUp">
+          <div class="icon-box">
+            <img src="assets/icon-why-choose-8.svg" alt="" />
+          </div>
+          <div class="why-choose-item-content">
+            <h3>Family-Friendly Environment</h3>
+            <p>
+              We use advanced dental technology to ensure precise, safe, and comfortable treatments
+              for every patient.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ourTeamMainAllBgSec">
+  <div class="mainContainer">
+    <div class="centreTxt">
+      <span>Our Team</span>
+      <h3>Meet Our <strong>Smile Experts</strong></h3>
+    </div>
+    <owl-carousel-o [options]="customOptions1">
+      <ng-template carouselSlide>
+        <div class="team-item-prime">
+          <div class="team-content-prime">
+            <h3><a href="#">Dr.Jane Roe</a></h3>
+            <p>Chief Dentist</p>
+
+            <div class="team-image-prime">
+              <figure>
+                <img src="assets/team-1.png" alt="" />
+              </figure>
+            </div>
+
+            <div class="team-social-list-prime">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="team-item-prime">
+          <div class="team-content-prime">
+            <h3><a href="#">Dr.Jane Roe</a></h3>
+            <p>Chief Dentist</p>
+
+            <div class="team-image-prime">
+              <figure>
+                <img src="assets/team-2.png" alt="" />
+              </figure>
+            </div>
+
+            <div class="team-social-list-prime">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="team-item-prime">
+          <div class="team-content-prime">
+            <h3><a href="#">Dr.Jane Roe</a></h3>
+            <p>Chief Dentist</p>
+
+            <div class="team-image-prime">
+              <figure>
+                <img src="assets/team-3.png" alt="" />
+              </figure>
+            </div>
+
+            <div class="team-social-list-prime">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="team-item-prime">
+          <div class="team-content-prime">
+            <h3><a href="#">Dr.Jane Roe</a></h3>
+            <p>Chief Dentist</p>
+
+            <div class="team-image-prime">
+              <figure>
+                <img src="assets/team-4.png" alt="" />
+              </figure>
+            </div>
+
+     
+
+            <div class="team-social-list-prime">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<section class="testmonialBgSecMain">
+  <div class="mainContainer">
+    <div class="centreTxt">
+      <span >testmonial</span>
+      <h3>
+       Real Smiles <strong >Real Patient Stories</strong>
+      </h3>
+    </div>
+            <owl-carousel-o [options]="customOptions2">
+
+           <ng-template carouselSlide>
+    <div class="testimonial-item">
+                                        <div class="testimonial-item-header">
+                                                              
+                                            <div class="testimonial-content">
+                                                <p>"The team is amazing! They made me feel comfortable and explained every step. My smile has never looked better."</p>
+                                            </div>
+                                        </div>                                        
+                                        <div class="testimonial-body">
+                                            <div class="testimonial-author">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="assets/author-1.jpg" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>Dr. Savannah Nguyen</h3>
+                                                    <p>Chief Dentist</p>
+                                                </div>
+                                            </div> 
+                                            <div class="testimonial-quote">
+                                                <img src="assets/testimonial-quote.svg" alt="">
+                                            </div>                                              
+                                        </div>                                    
+                                    </div>
+        </ng-template>
+             <ng-template carouselSlide>
+    <div class="testimonial-item">
+                                        <div class="testimonial-item-header">
+                                                              
+                                            <div class="testimonial-content">
+                                                <p>"The team is amazing! They made me feel comfortable and explained every step. My smile has never looked better."</p>
+                                            </div>
+                                        </div>                                        
+                                        <div class="testimonial-body">
+                                            <div class="testimonial-author">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="assets/author-1.jpg" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>Dr. Savannah Nguyen</h3>
+                                                    <p>Chief Dentist</p>
+                                                </div>
+                                            </div> 
+                                            <div class="testimonial-quote">
+                                                <img src="assets/testimonial-quote.svg" alt="">
+                                            </div>                                              
+                                        </div>                                    
+                                    </div>
+        </ng-template>
+
+             <ng-template carouselSlide>
+    <div class="testimonial-item">
+                                        <div class="testimonial-item-header">
+                                                              
+                                            <div class="testimonial-content">
+                                                <p>"The team is amazing! They made me feel comfortable and explained every step. My smile has never looked better."</p>
+                                            </div>
+                                        </div>                                        
+                                        <div class="testimonial-body">
+                                            <div class="testimonial-author">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="assets/author-1.jpg" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>Dr. Savannah Nguyen</h3>
+                                                    <p>Chief Dentist</p>
+                                                </div>
+                                            </div> 
+                                            <div class="testimonial-quote">
+                                                <img src="assets/testimonial-quote.svg" alt="">
+                                            </div>                                              
+                                        </div>                                    
+                                    </div>
+        </ng-template>
+             <ng-template carouselSlide>
+    <div class="testimonial-item">
+                                        <div class="testimonial-item-header">
+                                                              
+                                            <div class="testimonial-content">
+                                                <p>"The team is amazing! They made me feel comfortable and explained every step. My smile has never looked better."</p>
+                                            </div>
+                                        </div>                                        
+                                        <div class="testimonial-body">
+                                            <div class="testimonial-author">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="assets/author-1.jpg" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>Dr. Savannah Nguyen</h3>
+                                                    <p>Chief Dentist</p>
+                                                </div>
+                                            </div> 
+                                            <div class="testimonial-quote">
+                                                <img src="assets/testimonial-quote.svg" alt="">
+                                            </div>                                              
+                                        </div>                                    
+                                    </div>
+        </ng-template>
+             <ng-template carouselSlide>
+    <div class="testimonial-item">
+                                        <div class="testimonial-item-header">
+                                                              
+                                            <div class="testimonial-content">
+                                                <p>"The team is amazing! They made me feel comfortable and explained every step. My smile has never looked better."</p>
+                                            </div>
+                                        </div>                                        
+                                        <div class="testimonial-body">
+                                            <div class="testimonial-author">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="assets/author-1.jpg" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>Dr. Savannah Nguyen</h3>
+                                                    <p>Chief Dentist</p>
+                                                </div>
+                                            </div> 
+                                            <div class="testimonial-quote">
+                                                <img src="assets/testimonial-quote.svg" alt="">
+                                            </div>                                              
+                                        </div>                                    
+                                    </div>
+        </ng-template>
+
+  
+        </owl-carousel-o>
+
+  </div>
+</section>
+<section class="needDentalBgSec">
+  <div class="mainContainer">
+    <div class="flexMainContainer">
+      <div class="info-container">
+        <div class="info-item">
+          <div class="icon"><img src="/assets/icon-cta-phone.svg" alt="Phone" width="40" /></div>
+          <div class="text">
+            <h4>Need Dental Services ?</h4>
+            <p>Call on : (+01) 987 828 745</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="info-item">
+          <div class="icon"><img src="/assets/icon-cta-time.svg" alt="Phone" width="40" /></div>
+          <div class="text">
+            <h4>Opening Hours</h4>
+            <p>Mon to Sat 9:00AM to 9:00PM</p>
+          </div>
+        </div>
+      </div>
+      <button class="bookAppontmentBtn appointmentHoverChange" (click)="openLoginDialog()">make an appointment</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<button class="close-btn" (click)="onClose()">
+  <i class="bi bi-x-lg"></i>
+</button>
+<div class="login-dialog-header">
+  <h2>Login</h2>
+  <p>Please enter your mobile number or email to continue</p>
+</div>
+<div class="login-dialog-form">
+  <div class="formGroupMain">
+    <label class="mainLabeltxtCommon" for="mobileOrEmail">Mobile / Email</label>
+    <input
+      id="mobileOrEmail"
+      type="text"
+      class="login-input"
+      [class.input-error]="submitted && mobileOrEmail.invalid"
+      placeholder="Enter mobile number or email"
+      [formControl]="mobileOrEmail"
+    />
+    @if (submitted && mobileOrEmail.hasError('required')) {
+      <span class="errorMessage">Mobile or Email is required</span>
+    }
+  </div>
+  <button type="button" class="bookAppontmentBtn submit-btn" (click)="onSubmit()">Submit</button>
+</div>

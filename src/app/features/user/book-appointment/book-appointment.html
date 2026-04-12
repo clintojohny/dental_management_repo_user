@@ -1,0 +1,421 @@
+      <section class="subPageBannersec">
+  <div class="mainContainer">
+      <div class="header-textSubapge">
+                <h1 class="headerBlueCentre">Book Your <strong> Appointment</strong> </h1>
+            <ul>
+             <li> <a routerLink="/home">Home</a></li>
+             <li>/</li>
+             <li>Book Your  Appointment</li>
+            </ul>
+            </div>
+            </div>
+      </section>
+      
+      <section class="bookAppointmentBgsec">
+        <div class="mainContainer">
+
+<mat-stepper
+  class="example-stepper"
+  [orientation]="(stepperOrientation | async)!">
+  <mat-step [stepControl]="firstFormGroup" label="Select Services">
+    <form [formGroup]="firstFormGroup">
+ <main class="main-content">
+   <div class="form-container">
+                <!-- Services Section -->
+                <div class="section-title">
+                    <h2>Select a Services</h2>
+                </div>
+                <div class="services-grid">
+                    <label class="radio-card">
+                        <input type="radio" name="service" value="General Checkup">
+                        <span class="card-content">General Checkup</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="service" value="Teeth Cleaning">
+                        <span class="card-content">Teeth Cleaning</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="service" value="Root Canal">
+                        <span class="card-content">Root Canal</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="service" value="Dental Filling">
+                        <span class="card-content">Dental Filling</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="service" value="Teeth Whitening">
+                        <span class="card-content">Teeth Whitening</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="service" value="Orthodontics">
+                        <span class="card-content">Orthodontics</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="service" value="Dental Implants">
+                        <span class="card-content">Dental Implants</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="service" value="Emergency Care">
+                        <span class="card-content">Emergency Care</span>
+                    </label>
+                </div>
+
+                <!-- Doctors Section -->
+                <div class="section-title">
+                    <h2>Select a Doctor</h2>
+                    <span class="filter-text">Emergency Care</span>
+                </div>
+                <div class="doctors-grid">
+                    <label class="radio-card doctor-card">
+                        <input type="radio" name="doctor" value="Sarah Johnson">
+                        <span class="card-content">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&amp;background=e0e7ff&amp;color=4f46e5&amp;rounded=true" alt="Dr. Sarah Johnson">
+                            <div class="doctor-info">
+                                <h3>Dr. Sarah Johnson</h3>
+                                <p>General Dentistry</p>
+                            </div>
+                        </span>
+                    </label>
+                    <label class="radio-card doctor-card">
+                        <input type="radio" name="doctor" value="Michael Chen">
+                        <span class="card-content">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&amp;background=e0e7ff&amp;color=4f46e5&amp;rounded=true" alt="Dr. Michael Chen">
+                            <div class="doctor-info">
+                                <h3>Dr. Michael Chen</h3>
+                                <p>Orthodontics</p>
+                            </div>
+                        </span>
+                    </label>
+                    <label class="radio-card doctor-card">
+                        <input type="radio" name="doctor" value="Emily Williams">
+                        <span class="card-content">
+                            <img src="https://ui-avatars.com/api/?name=Emily+Williams&amp;background=e0e7ff&amp;color=4f46e5&amp;rounded=true" alt="Dr. Emily Williams">
+                            <div class="doctor-info">
+                                <h3>Dr. Emily Williams</h3>
+                                <p>Cosmetic Dentistry</p>
+                            </div>
+                        </span>
+                    </label>
+                    <label class="radio-card doctor-card">
+                        <input type="radio" name="doctor" value="James Anderson">
+                        <span class="card-content">
+                            <img src="https://ui-avatars.com/api/?name=James+Anderson&amp;background=e0e7ff&amp;color=4f46e5&amp;rounded=true" alt="Dr. James Anderson">
+                            <div class="doctor-info">
+                                <h3>Dr. James Anderson</h3>
+                                <p>Oral Surgery</p>
+                            </div>
+                        </span>
+                    </label>
+                    <label class="radio-card doctor-card">
+                        <input type="radio" name="doctor" value="Lisa Park">
+                        <span class="card-content">
+                            <img src="https://ui-avatars.com/api/?name=Lisa+Park&amp;background=e0e7ff&amp;color=4f46e5&amp;rounded=true" alt="Dr. Lisa Park">
+                            <div class="doctor-info">
+                                <h3>Dr. Lisa Park</h3>
+                                <p>Pediatric Dentistry</p>
+                            </div>
+                        </span>
+                    </label>
+                    <label class="radio-card doctor-card">
+                        <input type="radio" name="doctor" value="Robert Martinez">
+                        <span class="card-content">
+                            <img src="https://ui-avatars.com/api/?name=Robert+Martinez&amp;background=e0e7ff&amp;color=4f46e5&amp;rounded=true" alt="Dr. Robert Martinez">
+                            <div class="doctor-info">
+                                <h3>Dr. Robert Martinez</h3>
+                                <p>Endodontics</p>
+                            </div>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button matButton matStepperNext class="commonBTnBlueMain">Continue</button>
+                </div>
+            </div>
+    </main>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" label="Select Date And Time">
+  <main class="main-content">
+
+
+    <!-- Card -->
+    <div class="selectDateCard">
+      <div class="section-title">
+        <h1>Select Date &amp; Time</h1>
+      </div>
+
+      <div class="dateAndTymWrapper">
+    
+   <mat-form-field>
+  <mat-label>DD/MM/YY</mat-label>
+  <input matInput [matDatepicker]="datepicker" [(ngModel)]="value">
+  <mat-datepicker #datepicker/>
+  <mat-datepicker-toggle [for]="datepicker" matSuffix/>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Select Time</mat-label>
+  <input matInput
+    [matTimepicker]="timepicker"
+    [(ngModel)]="value"
+    [ngModelOptions]="{updateOn: 'blur'}">
+  <mat-timepicker #timepicker/>
+  <mat-timepicker-toggle [for]="timepicker" matSuffix/>
+</mat-form-field>
+      </div>
+     
+   
+      <!-- <div class="form-group">
+        <label>Preferred Date</label>
+        <div class="input-wrapper">
+          <input type="text" placeholder="DD-MM-YYYY">
+          <i class="fa-regular fa-calendar input-icon"></i>
+        </div>
+      </div> -->
+
+      <div class="form-group">
+        <label>Available Time Sheet</label>
+  
+        <div class="time-grid">
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 09:00 AM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+09:30 AM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+10:00 AM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 10:30 AM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 11:00 AM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 11:30 AM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 12:00 PM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 12:30 PM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 01:00 PM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 01:30 PM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 02:00 PM</button>
+          <button class="time-slot">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25ZM15 2.5C16.6415 2.5 18.267 2.82332 19.7835 3.45151C21.3001 4.07969 22.6781 5.00043 23.8388 6.16117C24.9996 7.3219 25.9203 8.69989 26.5485 10.2165C27.1767 11.733 27.5 13.3585 27.5 15C27.5 18.3152 26.183 21.4946 23.8388 23.8388C21.4946 26.183 18.3152 27.5 15 27.5C8.0875 27.5 2.5 21.875 2.5 15C2.5 11.6848 3.81696 8.50537 6.16117 6.16117C8.50537 3.81696 11.6848 2.5 15 2.5ZM15.625 8.75V15.3125L21.25 18.65L20.3125 20.1875L13.75 16.25V8.75H15.625Z" fill="#ADBCFF"/>
+</svg>
+ 02:30 PM</button>
+        </div>
+      </div>
+
+      <div class="card-actions">
+        <button matButton matStepperPrevious class="commonBTnBlueBorderMain">Back</button>
+        <button matButton matStepperNext class="commonBTnBlueMain">Continue</button>
+      </div>
+    </div>
+  </main>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup" label="Personal Details">
+<div class="booking-container">
+
+  <h2>Personal Details</h2>
+
+  <div class="form-grid">
+
+    <div class="formGroupMain">
+      <label class="mainLabeltxtCommon">First Name</label>
+  <mat-form-field class="example-full-width">
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="Enter First Name" >
+  </mat-form-field>
+  <div class="errorMessage">
+    please enter the name
+  </div>
+    </div>
+
+    <div class="formGroupMain">
+      <label class="mainLabeltxtCommon">Last Name</label>
+     <mat-form-field class="example-full-width">
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="Enter Last Name" >
+  </mat-form-field>
+    <div class="errorMessage">
+    please enter the Last name
+  </div>
+    </div>
+
+    <div class="formGroupMain">
+      <label class="mainLabeltxtCommon">Email</label>
+   <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Enter Email" >
+  </mat-form-field>
+      <div class="errorMessage">
+    please enter email
+  </div>
+    </div>
+
+    <div class="formGroupMain">
+      <label class="mainLabeltxtCommon">Phone Number</label>
+     <mat-form-field class="example-full-width">
+    <mat-label>Phone Number</mat-label>
+    <input matInput placeholder="Entre First Name" >
+  </mat-form-field>
+     <div class="errorMessage">
+    please enter phone number
+  </div>
+    </div>
+
+  </div>
+
+  <div class="formGroupMain">
+    <label class="mainLabeltxtCommon">Additional Notes (Optional)</label>
+     <mat-form-field class="example-full-width">
+ <mat-label>Leave a comment</mat-label>
+   <textarea matInput placeholder="Any specific Concern"></textarea>
+  </mat-form-field>
+  
+
+  </div>
+
+
+  <div class="summary-box">
+
+    <h3>Appointment Summary</h3>
+
+    <div class="summary-row">
+      <span>Services</span>
+      <span>General Consultation</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Doctor</span>
+      <span>Dr. Sara Johnson</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Date</span>
+      <span>2026-02-14</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Time</span>
+      <span>02:00 PM</span>
+    </div>
+
+    <hr>
+
+    <div class="summary-row price">
+      <span>Price:</span>
+      <span>Rs 75</span>
+    </div>
+
+  </div>
+
+
+  <div class="button-group">
+
+
+
+         <button matButton matStepperPrevious class="commonBTnBlueBorderMain">Back</button>
+        <button matButton matStepperNext class="commonBTnBlueMain">  Confirm Booking</button>
+
+  </div>
+
+</div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Appointment Booked</ng-template>
+<div class="success-container">
+
+  <div class="success-icon">
+
+<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.0225 20.025L24.5466 24.9191C24.9508 25.2222 25.4546 25.3613 25.9571 25.3086C26.4596 25.2559 26.9235 25.0152 27.256 24.6347L40.05 10.0125" stroke="#627FFF" stroke-width="3.56" stroke-linecap="round"/>
+<path d="M42.0528 24.03C42.0529 27.7957 40.8734 31.4669 38.6799 34.5279C36.4865 37.5889 33.3893 39.8859 29.8234 41.0964C26.2575 42.3068 22.402 42.3699 18.7984 41.2767C15.1948 40.1835 12.0242 37.989 9.73181 35.0013C7.43944 32.0137 6.14051 28.383 6.01744 24.6193C5.89438 20.8556 6.95336 17.1478 9.04565 14.0168C11.1379 10.8858 14.1584 8.48884 17.6829 7.16256C21.2074 5.83629 25.0588 5.64734 28.6961 6.62225" stroke="#627FFF" stroke-width="3.56" stroke-linecap="round"/>
+</svg>
+
+  </div>
+
+  <h1>Appointment Booked</h1>
+
+  <p class="subtitle">
+    Your Appointment has been successfully scheduled. We'll send you a
+    confirmation SMS with all the details.
+  </p>
+
+  <div class="summary-box">
+
+    <h3>Appointment Details</h3>
+
+    <div class="summary-row">
+      <span>Services</span>
+      <span>General Consultation</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Doctor</span>
+      <span>Dr. Sara Johnson</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Date</span>
+      <span>2026-02-14</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Time</span>
+      <span>02:00 PM</span>
+    </div>
+
+
+
+  </div>
+
+</div>
+    <div>
+   <button matButton matStepperPrevious class="commonBTnBlueBorderMain">Back</button>
+    </div>
+  </mat-step>
+</mat-stepper>
+        </div>
+      </section>
+      
+
+
+
+
+

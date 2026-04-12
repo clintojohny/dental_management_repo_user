@@ -1,0 +1,28 @@
+<button class="close-btn" (click)="onClose()">
+  <i class="bi bi-x-lg"></i>
+</button>
+<div class="otp-dialog-header">
+  <h2>Verify OTP</h2>
+  <p>We've sent a 4-digit code to <strong>{{ data.mobileOrEmail }}</strong></p>
+</div>
+<div class="otp-form">
+  <div class="otp-inputs">
+    @for (item of otpValues; track $index) {
+      <input
+        #otpInput
+        type="text"
+        maxlength="1"
+        class="otp-box"
+        [class.input-error]="submitted && !otpValues[$index]"
+        [value]="otpValues[$index]"
+        (input)="onOtpInput($event, $index)"
+        (keydown)="onOtpKeydown($event, $index)"
+        (paste)="onOtpPaste($event)"
+      />
+    }
+  </div>
+  @if (submitted && otpValues.join('').length < 4) {
+    <span class="errorMessage">Please enter the complete OTP</span>
+  }
+  <button type="button" class="bookAppontmentBtn submit-btn" (click)="onSubmit()">Submit</button>
+</div>
